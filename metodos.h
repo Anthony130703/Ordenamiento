@@ -1,5 +1,5 @@
-#ifndef BURBUJA_H
-#define BURBUJA_H
+#ifndef METODOS_H
+#define METODOS_H
 
 void burbuja(int arr[], int n);
 void insercion(int arr[], int n);
