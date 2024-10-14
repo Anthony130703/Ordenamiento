@@ -1,5 +1,5 @@
 #include <iostream>
-#include "burbuja.h"
+#include "metodos.h"
 
 void burbuja(int arr[], int n) {
     for (int i = 0; i < n - 1; ++i) {

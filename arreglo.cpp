@@ -1,5 +1,5 @@
 #include <iostream>
-#include "burbuja.h"
+#include "metodos.h"
 
 int main() {
     int n;
