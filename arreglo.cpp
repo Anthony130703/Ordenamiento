@@ -1,31 +1,34 @@
 #include <iostream>
 #include "metodos.h"
+using namespace std;
 
 int main() {
     int n;
-    std::cout << "Cuantos elementos deseas ingresar? ";
-    std::cin >> n;
+    cout << "Cuantos elementos deseas ingresar? ";
+    cin >> n;
 
     int numeros[n];  
 
-    std::cout << "Ingresa " << n << " numeros:\n";
+    cout << "Ingresa " << n << " numeros:\n";
     for (int i = 0; i < n; ++i) {
-        std::cin >> numeros[i];
+        cin >> numeros[i];
     }
-    std::cout<<"El arreglo es: ";
+    cout<<"El arreglo es: ";
      for (int i = 0; i < n; ++i) {
-        std::cout << numeros[i] << " ";
+        cout << numeros[i] << " ";
     }
-    std::cout << std::endl;
+    cout << endl;
 
     // Ordenar el arreglo usando el método burbuja
     burbuja(numeros, n);
+    // Ordenar el arreglo usando el metodo de insercion
+    insercion(numeros,n);
 
-    std::cout << "Los numeros ordenados son: ";
+    cout << "Los numeros ordenados son: ";
     for (int i = 0; i < n; ++i) {
-        std::cout << numeros[i] << " ";
+        cout << numeros[i] << " ";
     }
-    std::cout << std::endl;
+    cout << endl;
 
     return 0;
 }
