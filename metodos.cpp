@@ -41,7 +41,7 @@ void quickSort(int arr[], int inicio, int final)
     if (inicio < final) 
     {
         // Obtenemos el índice de partición
-        int pi = partition(arr, inicio, final);
+        int pi = particion(arr, inicio, final);
 
         // Ordenamos recursivamente los elementos antes y después de la partición
         quickSort(arr, inicio, pi - 1);
@@ -50,7 +50,7 @@ void quickSort(int arr[], int inicio, int final)
 }
 
 //ALGORITMO PARA HACER LA PARTINICION (QUICK SORT)
-int partition(int arr[], int inicio, int final)
+int particion(int arr[], int inicio, int final)
 {
     int pivot = arr[final];  // Elegimos el último elemento como pivote
     int i = inicio - 1;        // Índice del elemento más pequeño
