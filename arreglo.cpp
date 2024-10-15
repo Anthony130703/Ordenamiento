@@ -20,10 +20,12 @@ int main() {
     }
     cout << endl;
 
-    // Ordenar el arreglo usando el método burbuja
+    // Ordenar el arreglo usando el metodo burbuja
     burbuja(numeros, n);
     // Ordenar el arreglo usando el metodo de insercion
     insercion(numeros,n);
+    // ordenar el arreglo usando el metodo Quick Sort
+    quickSort(numeros, 0, n-1);
 
     cout << "Los numeros ordenados son: ";
     for (int i = 0; i < n; ++i) {
