@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h> //FUNCIONA NEW Y DELETE
 #include "metodos.h"
 using namespace std;
 
@@ -7,7 +8,7 @@ int main() {
     cout << "Cuantos elementos deseas ingresar? ";
     cin >> n;
 
-    int numeros[n];  
+    int* numeros= new int[n];  
 
     cout << "Ingresa " << n << " numeros:\n";
     for (int i = 0; i < n; ++i) {

@@ -4,5 +4,7 @@
 void burbuja(int arr[], int n);
 void insercion(int arr[], int n);
 
+//METODO QUICKSORT
+
 
 #endif
